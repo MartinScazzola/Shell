@@ -1,0 +1,12 @@
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o sh.o sh.c
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o builtin.o builtin.c
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o createcmd.o createcmd.c
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o exec.o exec.c
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o freecmd.o freecmd.c
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o history.o history.c
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o parsing.o parsing.c
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o printstatus.o printstatus.c
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o readline.o readline.c
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o runcmd.o runcmd.c
+cc -ggdb3 -O2 -Wall -Wextra -std=gnu11 -Wmissing-prototypes -D SHELL_NO_COLORS -D SHELL_NO_INTERACTIVE   -c -o utils.o utils.c
+cc   sh.o builtin.o createcmd.o exec.o freecmd.o history.o parsing.o printstatus.o readline.o runcmd.o utils.o   -o sh
